@@ -1,0 +1,3 @@
+export {
+  EventEmitterService
+} from './service';

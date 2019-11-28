@@ -2,7 +2,19 @@
   "extends": "./tsconfig.json",
   "compilerOptions": {
     "outDir": "./out-tsc/app",
-    "types": []
+    "baseUrl": "src",
+    "types": [],
+    "paths": {
+      "@core/*": ["app/core/*"],
+      "@service/*": ["app/core/service/*"],
+      "@model/*": ["app/core/model/*"],
+      "@config/*": ["app/config/*"],
+      "@pages/*": ["app/pages/*"],
+      "@shared/*": ["app/shared/*"],
+      "@env/*": ["environments/*"],
+      "@layout/*": ["app/layout/*"],
+      "@control/*": ["app/control/*"]
+    }
   },
   "files": [
     "src/main.ts",
@@ -16,3 +28,4 @@
     "src/**/*.spec.ts"
   ]
 }
+
