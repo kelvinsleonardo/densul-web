@@ -12,10 +12,14 @@ import {HttpInterceptService} from '@core/interceptor/interceptor-http.service';
 import {ErrorsHandler} from '@core/interceptor/errors-handler';
 import {ActivatedRoute, NavigationEnd, Router} from '@angular/router';
 import {HomePageComponent} from '@pages/home/home';
+import {HeaderComponent} from '@layout/header/header.component';
+import {FooterComponent} from '@layout/footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    HeaderComponent,
+    FooterComponent,
     HomePageComponent
   ],
   imports: [
